@@ -19,6 +19,7 @@ object Date {
 }
 
 //class Date private(private val day: Int, val month: Int, val year: Int)
+// constructor params can be val ("final" equivalent) or var -- mutable
 class Date protected(val day: Int, val month: Int, val year: Int) {
   // overrides MUST use override prefix keyword
   override def toString():String = s"I'm a Date day is ${day}, month is ${month}, year is ${year}"
